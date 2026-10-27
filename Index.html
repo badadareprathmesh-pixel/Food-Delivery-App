@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order.in | Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+   
+
+<div class="top-bar">
+    <div class="offer-text">
+        ⭐ Get 5% Off your first order,
+        <strong>Promo: ORDER5</strong>
+    </div>
+
+    <div class="location">
+        📍 Bharti vidyapith BackGate, <strong>Road No. 12</strong>, Pune
+        <a href="#">Change Location</a>
+    </div>
+</div>
+
+<!-- Navigation Bar -->
+<header class="navbar">
+
+    <a href="#" class="logo">
+        Order<span>.in</span>
+    </a>
+
+    <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#categories">Browse Menu</a>
+        <a href="#offers">Special Offers</a>
+        <a href="#restaurants">Restaurants</a>
+        <a href="#track">Track Order</a>
+    </nav>
+
+    <div class="nav-right">
+
+        <a href="#cart" class="cart">
+            🛒 <sup>23</sup> ₹ 1,249
+        </a>
+
+        <a href="#" class="login">
+            👤 Login/Signup
+        </a>
+
+    </div>
+
+</header>
+
+
+   
+   
+<!-- Hero Section -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="tagline">
+            Order Restaurant food, takeaway and groceries.
+        </p>
+
+        <h1>
+            Feast Your Senses,<br>
+            <span>Fast and Fresh</span>
+        </h1>
+
+        <p class="description">
+            Enter a pincode to see what we deliver
+        </p>
+
+        <div class="search-box">
+            <input type="text" placeholder="e.g. 500034">
+            <button>Search</button>
+        </div>
+
+    </div>
+
+    <!-- Right Orange Section -->
+    <div class="hero-image">
+
+        <div class="notification notification-one">
+            <span class="number">1</span>
+            <p>
+                Order Received <span class="dot">●</span> now<br>
+                Restaurant Accepted! <br>
+                Your meal is being prepared with care.
+            </p>
+        </div>
+
+        <div class="notification notification-two">
+            <span class="number">2</span>
+            <p>
+                Delivery • 5 mins ago<br>
+                Rider Assigned <br>
+                Meet Alex! Tracking link sent to your phone.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- Offers -->
+   
+<!-- Exclusive Deals Section -->
+<section class="deals-section" id="offers">
+
+    <div class="deals-header">
+
+        <h2>
+            Up to -40% 🎊 Exclusive Deals
+        </h2>
+
+        <div class="deal-filters">
+            <button class="filter-btn">Vegan</button>
+            <button class="filter-btn">Sushi</button>
+            <button class="filter-btn selected">Pizza &amp; Fast food</button>
+            <button class="filter-btn">Others</button>
+            <a href="#restaurants" class="view-deals">
+                View All Deals →
+            </a>
+        </div>
+
+    </div>
+
+    <div class="deals-container">
+
+        <!-- Card 1 -->
+        <div class="deal-card">
+            <img
+                src="data:image/jpeg;base64,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    "
+                alt="Delicious burger">
+
+            <span class="discount">-40%</span>
+
+            <div class="deal-info">
+                <p>RESTAURANT</p>
+                <h3>Biryani House Jubilee Hills</h3>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="deal-card">
+            <img
+                src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=85"
+                alt="Fresh healthy food bowl">
+
+            <span class="discount">-20%</span>
+
+            <div class="deal-info">
+                <p>RESTAURANT</p>
+                <h3>Grand Bawarchi Cafe, Hyderabad</h3>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="deal-card">
+            <img
+                src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=85"
+                alt="Fresh pizza">
+
+            <span class="discount">-17%</span>
+
+            <div class="deal-info">
+                <p>RESTAURANT</p>
+                <h3>Butterbrot Bakery and Cafe</h3>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+  
+<!-- Popular Categories -->
+<section class="section" id="categories">
+
+    <h2>Order.in Popular Categories 🤩</h2>
+
+    <div class="category-container">
+
+        <div class="category-box">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=400&q=80" alt="Burger">
+            <h3>Burgers & Fast food</h3>
+            <p>21 Restaurants</p>
+        </div>
+
+        <div class="category-box">
+            <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=400&q=80" alt="Salad">
+            <h3>Salads</h3>
+            <p>32 Restaurants</p>
+        </div>
+
+        <div class="category-box">
+            <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=400&q=80" alt="Pasta">
+            <h3>Pasta & Casuals</h3>
+            <p>4 Restaurants</p>
+        </div>
+
+        <div class="category-box">
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=400&q=80" alt="Pizza">
+            <h3>Pizza</h3>
+            <p>32 Restaurants</p>
+        </div>
+
+        <div class="category-box">
+            <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=400&q=80" alt="Breakfast">
+            <h3>Breakfast</h3>
+            <p>4 Restaurants</p>
+        </div>
+
+        <div class="category-box">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=400&q=80" alt="Soup">
+            <h3>Soups</h3>
+            <p>32 Restaurants</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Popular Restaurants -->
+<section class="section" id="restaurants">
+
+    <h2>Popular Restaurants</h2>
+
+    <div class="restaurant-container">
+
+        <div class="restaurant-box">
+            <div class="restaurant-color burger">
+                <h3>Burgers</h3>
+            </div>
+            <div class="restaurant-name">
+                McDonald's (Delhi)
+            </div>
+        </div>
+
+        <div class="restaurant-box">
+            <div class="restaurant-color pizza">
+                <h3>Pizza</h3>
+            </div>
+            <div class="restaurant-name">
+                Domino's Pizza (Mumbai)
+            </div>
+        </div>
+
+        <div class="restaurant-box">
+            <div class="restaurant-color chicken">
+                <h3>Fried Chicken</h3>
+            </div>
+            <div class="restaurant-name">
+                KFC (Kolkata)
+            </div>
+        </div>
+
+        <div class="restaurant-box">
+            <div class="restaurant-color coffee">
+                <h3>Coffee</h3>
+            </div>
+            <div class="restaurant-name">
+                Starbucks Coffee
+            </div>
+        </div>
+
+        <div class="restaurant-box">
+            <div class="restaurant-color bk">
+                <h3>BK</h3>
+            </div>
+            <div class="restaurant-name">
+                Burger King (Pune)
+            </div>
+        </div>
+
+        <div class="restaurant-box">
+            <div class="restaurant-color sweets">
+                <h3>Sweets</h3>
+            </div>
+            <div class="restaurant-name">
+                Haldiram's
+            </div>
+             </div>
+
+           </div>
+         </section>
+
+        <!-- Order.in App Download Section -->
+<section class="app-section">
+
+    <div class="app-image">
+       <img src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?w=800&amp;h=600&amp;fit=crop" alt="Couple ordering food">    </div>
+
+    <div class="app-content">
+
+        <h1>Order<span>ing</span> is more</h1>
+
+        <h2><span>Personalised</span> &amp; Instant</h2>
+
+        <p>Download the Order.in app for faster ordering</p>
+
+        <div class="app-buttons">
+            <a href="#" class="app-store">
+                <span class="apple-icon">●</span>
+                <span>
+                    <small>Download on the</small>
+                    <strong>App Store</strong>
+                </span>
+            </a>
+
+            <a href="#" class="app-store">
+                <span class="play-icon">▶</span>
+                <span>
+                    <small>GET IT ON</small>
+                    <strong>Google Play</strong>
+                </span>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Partner and Rider Section -->
+<section class="partner-section">
+
+    <!-- Partner Card -->
+    <div class="partner-card">
+
+        <div class="partner-content">
+            <span class="partner-badge">
+                Earn more with lower fees
+            </span>
+
+            <p>Signup as a business</p>
+
+            <h2>Partner with us</h2>
+
+            <a href="#" class="partner-btn">Get Started</a>
+        </div>
+
+        <div class="partner-image">
+            <img
+                src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=700&q=85"
+                alt="Chef preparing food">
+        </div>
+
+    </div>
+
+    <!-- Rider Card -->
+    <div class="partner-card rider-card">
+
+        <div class="partner-content">
+            <span class="partner-badge">
+                Avail exclusive perks
+            </span>
+
+            <p>Signup as a rider</p>
+
+            <h2>Ride with us</h2>
+
+            <a href="#" class="partner-btn">Get Started</a>
+        </div>
+
+        <div class="partner-image">
+            <img
+                src="image.png"
+                alt="Food delivery rider">
+        </div>
+
+    </div>
+
+</section>
+
+<section class="how section-wrap" id="how-it-works">
+      <div class="section-heading"><div><p class="eyebrow"></p><h2>Good food is just around the corner</h2></div></div>
+      <div class="how-grid">
+        <article><span class="how-icon">🍔</span><h3>Place an Order!</h3><p>Choose from your favourite restaurants and order online in just a few clicks.</p></article>
+        <article><span class="how-icon">🔍</span><h3>Track Progress</h3><p>Follow your order status and get updates while your meal is on its way.</p></article>
+        <article><span class="how-icon">🛵</span><h3>Get your Order!</h3><p>Fresh, delicious food delivered to your door, fast.</p></article>
+      </div>
+    </section>
+
+    <section class="stats section-wrap">
+      <div><strong>546+</strong><span>Registered Riders</span></div><div><strong>789,900+</strong><span>Orders Delivered</span></div><div><strong>690+</strong><span>Restaurant Partners</span></div><div><strong>17,457+</strong><span>Food Items</span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="footer">
+    <div class="footer-top">
+      <div class="footer-brand"><a class="logo" href="#">Order<span>.in</span></a><p>Good food. Good mood. Delivered.</p><div class="store-buttons small-stores"><a href="#footer">▣ <span><small>Download on the</small><strong>App Store</strong></span></a><a href="#footer">▶️ <span><small>GET IT ON</small><strong>Google Play</strong></span></a></div></div>
+      <div class="footer-newsletter"><h3>Get exclusive deals in your inbox</h3><form action="#"><input type="email" placeholder="youremail@gmail.com" aria-label="Email address"><button type="button">Subscribe</button></form><small>We won't spam. Unsubscribe any time.</small></div>
+    </div>
+    <div class="footer-links"><div><h4>Know more about us</h4><a href="#how-it-works">About Order.in</a><a href="#how-it-works">How it works</a><a href="#footer">Careers</a></div><div><h4>Help & support</h4><a href="#footer">Contact us</a><a href="#footer">FAQs</a><a href="#footer">Delivery areas</a></div><div><h4>Partner with us</h4><a href="#footer">Add your restaurant</a><a href="#footer">Sign up to deliver</a><a href="#footer">Business account</a></div><div><h4>Legal pages</h4><a href="#footer">Terms & conditions</a><a href="#footer">Privacy policy</a><a href="#footer">Cookies</a></div></div>
+    <div class="footer-bottom"><span>© 2025 Order.in. All rights reserved.</span><span>Made for food lovers ♡</span></div>
+  </footer>
+
+   
+
+        <div class="copyright">
+            © 2026 Order.in. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

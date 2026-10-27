@@ -1,0 +1,1492 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #252525;
+    background: #ffffff;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+
+/* Top Offer Bar */
+.top-bar {
+    min-height: 48px;
+    margin: 0 3.3%;
+    padding: 10px 4%;
+    background: #fff5e9;
+    border: 1px solid #ffe0bf;
+    border-radius: 0 0 12px 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    color: #777;
+    font-size: 14px;
+}
+
+.offer-text strong {
+    color: #ff6b35;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.location strong {
+    color: #252525;
+}
+
+.location a {
+    color: #ff6b35;
+    text-decoration: underline;
+    margin-left: 18px;
+}
+
+/* Navigation Bar */
+.navbar {
+    min-height: 96px;
+    padding: 18px 3.3%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    background: white;
+}
+
+.logo {
+    font-size: 29px;
+    font-weight: 800;
+    color: #8282d8;
+    white-space: nowrap;
+}
+
+.logo span {
+    display: inline-block;
+    background: #ff8a25;
+    color: white;
+    font-size: 17px;
+    padding: 4px 7px;
+    border-radius: 8px;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.navbar nav a {
+    color: #7e7eef;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: color 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+    color: #ff6b00;
+}
+
+/* Cart and Login */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.cart {
+    position: relative;
+    padding: 12px 20px;
+    border: 2px solid #e2e2e2;
+    border-radius: 35px;
+    color: #7777cd;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.cart sup {
+    background: #ff8a25;
+    color: white;
+    border-radius: 50%;
+    padding: 3px 5px;
+    font-size: 10px;
+}
+
+.login {
+    background: #7d7ddf;
+    color: white;
+    padding: 13px 28px;
+    border-radius: 35px;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.login:hover {
+    background: #ff6b35;
+}
+
+
+
+
+/* Hero Section */
+.hero {
+    margin: 23px 4px;
+    padding: 0 4%;
+    min-height: 548px;
+
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    gap: 35px;
+
+    background: #f5f7fa;
+    border: 1px solid #dddddd;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.hero-content {
+    padding: 40px 20px;
+}
+
+.tagline {
+    color: #ff6b00;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 4vw, 66px);
+    line-height: 1.18;
+    font-weight: 800;
+    color: #20203f;
+    margin-bottom: 32px;
+}
+
+.hero h1 span {
+    color: #ff700b;
+}
+
+.description {
+    color: #64748b;
+    margin-bottom: 14px;
+    font-size: 16px;
+}
+
+/* Pincode Search */
+.search-box {
+    display: flex;
+    width: 100%;
+    max-width: 660px;
+    height: 64px;
+    background: white;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px #00000012;
+}
+
+.search-box input {
+    flex: 1;
+    min-width: 0;
+    padding: 0 30px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.search-box button {
+    background: #ff791c;
+    color: white;
+    padding: 0 48px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.search-box button:hover {
+    background: #ed6505;
+}
+
+/* Right Orange Background */
+.hero-image {
+    position: relative;
+    height: 508px;
+    width: 100%;
+    background: linear-gradient(120deg, #ff914d, #ff6900);
+    border-radius: 125px 22px 0 110px;
+}
+
+/* White Notification Cards */
+.notification {
+    position: absolute;
+    background: #fffaf7;
+    color: #242440;
+    padding: 20px 24px;
+    border-radius: 20px;
+    font-size: 19px;
+    line-height: 1.45;
+    box-shadow: 0 10px 25px #00000008;
+}
+
+.notification p {
+    margin: 0;
+}
+
+.notification-one {
+    top: 15%;
+    right: 15%;
+    width: 400px;
+    max-width: 85%;
+}
+
+.notification-two {
+    bottom: 11%;
+    left: 7%;
+    width: 440px;
+    max-width: 88%;
+}
+
+.number {
+    display: block;
+    color: #e3deda;
+    font-size: 16px;
+}
+
+.dot {
+    color: green;
+}
+
+/* Common Sections */
+.section {
+    padding: 65px 7%;
+}
+
+.section h2 {
+    font-size: 32px;
+    line-height: 1.25;
+    margin-bottom: 28px;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.section-heading h2 {
+    margin-bottom: 0;
+}
+
+.view-all {
+    color: #ff6b35;
+    font-weight: bold;
+}
+
+/* Exclusive Deals */
+.offer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.offer-card {
+    padding: 30px;
+    min-height: 180px;
+    border-radius: 16px;
+    transition: transform 0.3s;
+}
+
+.offer-card:hover {
+    transform: translateY(-6px);
+}
+
+.orange {
+    background: #fff0e8;
+}
+
+.yellow {
+    background: #fff6d9;
+}
+
+.green {
+    background: #e8f6e9;
+}
+
+.offer-card span {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ff6b35;
+}
+
+.offer-card h3 {
+    font-size: 23px;
+    margin: 12px 0 5px;
+}
+
+.offer-card p {
+    color: #666666;
+}
+
+/* Popular Categories */
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.category-card {
+    text-align: center;
+    background: #fff8f3;
+    padding-bottom: 15px;
+    border-radius: 14px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-6px);
+}
+
+.category-card img {
+    width: 100%;
+    height: 155px;
+    object-fit: cover;
+    display: block;
+}
+
+.category-card h3 {
+    margin-top: 12px;
+    font-size: 17px;
+}
+
+/* Copyright */
+.copyright {
+    padding: 20px;
+    text-align: center;
+    color: #666666;
+    font-size: 13px;
+    border-top: 1px solid #eeeeee;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-image {
+        margin: 10px;
+    }
+
+    .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .offer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 15px 5%;
+    }
+
+    .navbar nav {
+        gap: 12px;
+    }
+
+    .nav-right {
+        gap: 10px;
+    }
+
+    .hero {
+        padding: 45px 5%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-image > img {
+        height: 260px;
+    }
+
+    .section {
+        padding: 45px 5%;
+    }
+
+    .section h2 {
+        font-size: 27px;
+    }
+
+    .offer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-card img {
+        height: 125px;
+    }
+
+    .delivery-card {
+        left: -10px;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar nav {
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .top-bar {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 650px) {
+    .top-bar {
+        margin: 0;
+        padding: 12px;
+        font-size: 12px;
+    }
+
+    .location {
+        flex-wrap: wrap;
+    }
+
+    .navbar {
+        padding: 18px;
+        gap: 18px;
+    }
+
+    .navbar nav {
+        order: 3;
+        width: 100%;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    .navbar nav a {
+        font-size: 13px;
+    }
+
+    .nav-right {
+        gap: 10px;
+    }
+
+    .cart {
+        padding: 9px 12px;
+        font-size: 13px;
+    }
+
+    .login {
+        padding: 10px 13px;
+        font-size: 12px;
+    }
+}
+
+/* Exclusive Deals Section */
+.deals-section {
+    padding: 65px 3.3%;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.deals-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+    margin-bottom: 100px;
+}
+
+.deals-header h2 {
+    color: #20203f;
+    font-size: clamp(25px, 2.2vw, 38px);
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+.deal-filters {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.filter-btn {
+    background: white;
+    border: 1px solid #dddddd;
+    border-radius: 30px;
+    padding: 11px 24px;
+    font-size: 14px;
+    color: #20203f;
+    white-space: nowrap;
+}
+
+.filter-btn.selected {
+    background: #ff790b;
+    border-color: #ff790b;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 3px 10px #ff790b35;
+}
+
+.filter-btn:hover {
+    border-color: #ff790b;
+}
+
+.view-deals {
+    color: #ff6500;
+    text-decoration: underline;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+/* Deal Cards */
+.deals-container {
+    max-width: 1346px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.deal-card {
+    position: relative;
+    height: 286px;
+    border-radius: 17px;
+    overflow: hidden;
+    box-shadow: 0 7px 20px #00000015;
+    cursor: pointer;
+}
+
+.deal-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s;
+}
+
+.deal-card:hover img {
+    transform: scale(1.05);
+}
+
+/* Dark gradient over image */
+.deal-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.90),
+        transparent 70%
+    );
+    pointer-events: none;
+}
+
+/* Discount Badge */
+.discount {
+    position: absolute;
+    top: 18px;
+    right: 17px;
+    z-index: 2;
+    background: #20203f;
+    color: white;
+    padding: 11px 17px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+/* Restaurant Name */
+.deal-info {
+    position: absolute;
+    bottom: 24px;
+    left: 23px;
+    right: 15px;
+    z-index: 2;
+    color: white;
+}
+
+.deal-info p {
+    font-size: 12px;
+    font-weight: bold;
+    color: #eeeeee;
+    margin-bottom: 8px;
+}
+
+.deal-info h3 {
+    font-size: clamp(17px, 1.5vw, 25px);
+    font-weight: 800;
+    line-height: 1.3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+    .deals-header {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 45px;
+    }
+
+    .deal-filters {
+        flex-wrap: wrap;
+    }
+
+    .deals-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .deals-section {
+        padding: 40px 5%;
+    }
+
+    .deals-header {
+        margin-bottom: 30px;
+    }
+
+    .deals-header h2 {
+        white-space: normal;
+        font-size: 27px;
+    }
+
+    .deal-filters {
+        gap: 8px;
+    }
+
+    .filter-btn {
+        padding: 9px 14px;
+        font-size: 12px;
+    }
+
+    .view-deals {
+        margin: 8px 0;
+    }
+
+    .deals-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .deal-card {
+        height: 260px;
+    }
+
+    .deal-info h3 {
+        font-size: 21px;
+    }
+}
+
+/* Popular Categories */
+#categories {
+    padding: 30px 3%;
+}
+
+#categories h2,
+#restaurants h2 {
+    color: #20203f;
+    font-size: 32px;
+    border-top: 1px solid #999;
+    padding-top: 5px;
+    margin-bottom: 30px;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+.category-box {
+    background: #f6f8fc;
+    padding: 22px;
+    text-align: center;
+    border-radius: 16px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 6px #00000015;
+    min-width: 0;
+}
+
+.category-box img {
+    width: 100%;
+    height: 137px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.category-box h3 {
+    font-size: 17px;
+    margin-top: 18px;
+    margin-bottom: 5px;
+    color: #20203f;
+}
+
+.category-box p {
+    color: #ff6900;
+    font-size: 14px;
+}
+
+
+/* Popular Restaurants */
+#restaurants {
+    padding: 15px 3% 40px;
+}
+
+.restaurant-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 22px;
+}
+
+.restaurant-box {
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 2px 7px #00000025;
+    text-align: center;
+    min-width: 0;
+}
+
+.restaurant-color {
+    height: 171px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.restaurant-color h3 {
+    color: white;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.burger {
+    background: #ffc629;
+}
+
+.burger h3 {
+    color: #e63b24;
+}
+
+.pizza {
+    background: #00883e;
+}
+
+.chicken {
+    background: #eb0033;
+}
+
+.coffee {
+    background: #0866c9;
+}
+
+.bk {
+    background: #ff6635;
+}
+
+.sweets {
+    background: #ff9000;
+}
+
+.restaurant-name {
+    background: #20203f;
+    color: white;
+    padding: 17px 8px;
+    font-size: 16px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+    .category-container,
+    .restaurant-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #categories h2,
+    #restaurants h2 {
+        font-size: 25px;
+    }
+
+    .category-container,
+    .restaurant-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .category-box {
+        padding: 12px;
+    }
+
+    .category-box img {
+        height: 110px;
+    }
+
+    .restaurant-color {
+        height: 130px;
+    }
+
+    .restaurant-color h3 {
+        font-size: 22px;
+    }
+
+    .restaurant-name {
+        font-size: 12px;
+    }
+}
+/* App Download Section */
+.app-section {
+    margin: 30px 1%;
+    padding: 50px 3.5%;
+    min-height: 540px;
+    background: linear-gradient(120deg, #f5f5f5, #e8e8e8);
+    border-radius: 35px;
+
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    gap: 50px;
+}
+
+/* Left Image */
+.app-image img {
+    width: 100%;
+    height: 405px;
+    object-fit: cover;
+    border-radius: 23px;
+    display: block;
+}
+
+/* Right Content */
+.app-content {
+    text-align: center;
+}
+
+.app-content h1 {
+    font-size: clamp(36px, 4vw, 58px);
+    font-weight: 800;
+    color: #1c1b32;
+    margin-bottom: 15px;
+}
+
+.app-content h1 span {
+    color: #ff9000;
+}
+
+.app-content h2 {
+    background: #1c1b32;
+    color: white;
+    padding: 16px 20px;
+    border-radius: 60px;
+    font-size: clamp(22px, 2.3vw, 35px);
+    margin-bottom: 22px;
+    white-space: nowrap;
+}
+
+.app-content h2 span {
+    color: #ff7900;
+}
+
+.app-content p {
+    font-size: 17px;
+    margin-bottom: 22px;
+}
+
+.app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.app-store {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    background: #050505;
+    color: white;
+    padding: 7px 14px;
+    border: 1px solid #888;
+    border-radius: 7px;
+    text-align: left;
+    text-decoration: none;
+}
+
+.app-store small,
+.app-store strong {
+    display: block;
+}
+
+.app-store small {
+    font-size: 10px;
+}
+
+.app-store strong {
+    font-size: 20px;
+}
+
+.apple-icon {
+    font-size: 28px;
+}
+
+.play-icon {
+    font-size: 28px;
+    color: #36c65b;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .app-section {
+        grid-template-columns: 1fr;
+        padding: 30px 5%;
+        gap: 30px;
+    }
+
+    .app-image img {
+        height: 320px;
+    }
+
+    .app-content h2 {
+        white-space: normal;
+    }
+}
+
+@media (max-width: 500px) {
+    .app-image img {
+        height: 230px;
+    }
+
+    .app-content h1 {
+        font-size: 34px;
+    }
+
+    .app-content h2 {
+        font-size: 21px;
+    }
+}
+
+
+
+
+/* Partner and Rider Section */
+.partner-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 34px;
+    padding: 30px 1%;
+    margin-bottom: 30px;
+}
+
+/* Main Card */
+.partner-card {
+    display: grid;
+    grid-template-columns: 55% 45%;
+    min-width: 0;
+    min-height: 400px;
+    overflow: hidden;
+    border-radius: 28px;
+    background: #1d1c34;
+}
+
+/* Rider Card Background */
+.rider-card {
+    background: #88745a;
+}
+
+/* Text Area */
+.partner-content {
+    padding: 45px 10% 40px 12%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+}
+
+/* White Badge */
+.partner-badge {
+    display: inline-block;
+    background: white;
+    color: #17172c;
+    border-radius: 30px;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+/* Orange Description */
+.partner-content p {
+    color: #ff9000;
+    margin-top: 18px;
+    font-size: 16px;
+}
+
+/* Main Heading */
+.partner-content h2 {
+    color: white;
+    font-size: clamp(26px, 2.6vw, 48px);
+    line-height: 1.2;
+    margin-top: 12px;
+    margin-bottom: 40px;
+    white-space: nowrap;
+}
+
+/* Get Started Button */
+.partner-btn {
+    display: inline-block;
+    margin-top: auto;
+    padding: 16px 40px;
+    background: #ff9d00;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 35px;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.partner-btn:hover {
+    background: #ff7b00;
+}
+
+/* Right Side Image */
+.partner-image {
+    min-width: 0;
+    height: 100%;
+}
+
+.partner-image img {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    display: block;
+    object-fit: cover;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+    .partner-section {
+        grid-template-columns: 1fr;
+    }
+
+    .partner-card {
+        min-height: 350px;
+    }
+
+    .partner-image img {
+        min-height: 350px;
+    }
+
+    .partner-content {
+        padding-left: 8%;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .partner-section {
+        padding: 20px 4%;
+        gap: 20px;
+    }
+
+    .partner-card {
+        grid-template-columns: 1fr;
+    }
+
+    .partner-content {
+        padding: 28px;
+        min-height: 250px;
+    }
+
+    .partner-content h2 {
+        font-size: 32px;
+        white-space: normal;
+        margin-bottom: 25px;
+    }
+
+    .partner-image {
+        height: 250px;
+    }
+
+    .partner-image img {
+        height: 250px;
+        min-height: 250px;
+    }
+}
+/* =========================================
+   HOW IT WORKS SECTION
+========================================= */
+
+.how {
+    border-top: 1px solid #eee7e2;
+}
+
+/* Three steps displayed in a row */
+.how-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    text-align: center;
+    padding: 16px 4% 0;
+}
+
+/* Individual step */
+.how-grid article {
+    padding: 20px 25px;
+}
+
+/* Emoji icon background */
+.how-icon {
+    display: grid;
+    place-items: center;
+    margin: 0 auto 15px;
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+    background: #fff0e7;
+    font-size: 28px;
+}
+
+/* Step heading */
+.how-grid h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+/* Step description */
+.how-grid p {
+    color: #888;
+    font-size: 12px;
+    max-width: 280px;
+    margin: auto;
+}
+
+
+/* =========================================
+   STATISTICS SECTION
+========================================= */
+
+/* Four statistics displayed in a row */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    background: #fff8f3;
+    border-radius: 18px;
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+/* Each statistic */
+.stats div {
+    display: grid;
+    gap: 4px;
+}
+
+/* Large numbers */
+.stats strong {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    color: #e95120;
+}
+
+/* Labels below the numbers */
+.stats span {
+    font-size: 12px;
+    color: #777;
+}
+
+
+/* =========================================
+   FOOTER SECTION
+========================================= */
+
+/* Main footer background and spacing */
+.site-footer {
+    background: #242424;
+    color: #fff;
+    padding: 55px 5.5% 20px;
+}
+
+/* Top footer: logo on the left, newsletter on the right */
+.footer-top {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 8%;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ffffff22;
+}
+
+/* Footer logo */
+.footer-brand .logo {
+    color: white;
+}
+
+/* Text below the logo */
+.footer-brand p {
+    color: #aaa;
+    font-size: 12px;
+    margin: 8px 0 0;
+}
+
+/* Newsletter container */
+.footer-newsletter {
+    max-width: 600px;
+    justify-self: end;
+    width: 100%;
+}
+
+/* Newsletter heading */
+.footer-newsletter h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* Email input and subscribe button */
+.footer-newsletter form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+}
+
+/* Email input field */
+.footer-newsletter input {
+    min-width: 0;
+    border: 1px solid #ffffff25;
+    border-radius: 8px;
+    padding: 13px 14px;
+    color: white;
+    background: #ffffff0c;
+    outline: 0;
+}
+
+/* Subscribe button */
+.footer-newsletter button {
+    border: 0;
+    background: #ff6b35;
+    color: white;
+    font-weight: 800;
+    border-radius: 8px;
+    padding: 0 18px;
+    cursor: pointer;
+}
+
+/* Newsletter note */
+.footer-newsletter small {
+    display: block;
+    margin-top: 9px;
+    color: #999;
+    font-size: 10px;
+}
+
+
+/* =========================================
+   FOOTER LINKS
+========================================= */
+
+/* Four columns of footer links */
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 35px 0;
+}
+
+/* Footer column headings */
+.footer-links h4 {
+    font-size: 12px;
+    margin: 0 0 13px;
+}
+
+/* Individual footer links */
+.footer-links a {
+    display: block;
+    color: #aaa;
+    font-size: 11px;
+    margin: 9px 0;
+}
+
+/* Footer link hover effect */
+.footer-links a:hover {
+    color: white;
+}
+
+
+/* =========================================
+   FOOTER BOTTOM
+========================================= */
+
+/* Copyright and final message */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 20px;
+    border-top: 1px solid #ffffff22;
+    color: #999;
+    font-size: 10px;
+}
+
+/* App store buttons inside the footer */
+.small-stores {
+    margin-top: 20px;
+}
+
+/* Smaller footer app buttons */
+.small-stores a {
+    padding: 7px 10px;
+}
+
+
+/* =========================================
+   TABLET RESPONSIVE DESIGN
+   Applies to screens 1080px wide or smaller
+========================================= */
+
+@media (max-width: 1080px) {
+
+    /* Two columns for the restaurant categories */
+    .category-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    /* Two columns for restaurant cards */
+    .restaurant-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE DESIGN
+   Applies to screens 700px wide or smaller
+========================================= */
+
+@media (max-width: 700px) {
+
+    /* Stack the three steps vertically */
+    .how-grid {
+        grid-template-columns: 1fr;
+        gap: 5px;
+        padding: 0;
+    }
+
+    /* Adjust spacing around each step */
+    .how-grid article {
+        padding: 18px 10px;
+    }
+
+    /* Display statistics in two columns */
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 28px;
+        margin-bottom: 35px;
+    }
+
+    /* Slightly smaller statistics numbers */
+    .stats strong {
+        font-size: 24px;
+    }
+
+    /* Stack the footer's top section */
+    .footer-top {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    /* Align newsletter to the left */
+    .footer-newsletter {
+        justify-self: start;
+    }
+
+    /* Display footer links in two columns */
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 15px;
+    }
+
+    /* Stack copyright and message vertically */
+    .footer-bottom {
+        flex-direction: column;
+    }
+}
+
+
+/* =========================================
+   EXTRA SMALL MOBILE SCREENS
+   Applies to screens 380px wide or smaller
+========================================= */
+
+@media (max-width: 380px) {
+
+    /* Display the newsletter form in one column */
+    .footer-newsletter form {
+        grid-template-columns: 1fr;
+    }
+
+    /* Add padding to the subscribe button */
+    .footer-newsletter button {
+        padding: 12px;
+    }
+}
